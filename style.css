@@ -24,7 +24,7 @@ body {
     position: relative;
     width: 380px;
     padding: 40px;
-    border-radius: 20px;
+    border-radius: 20px 20px;
     backdrop-filter: blur(15px);
     background: rgb(255, 255, 255, 0.1);
     border: 1px solid rgb(255, 255, 255, 0.4);
@@ -166,3 +166,32 @@ body {
 .register-link a:hover{
     text-decoration: underline;
 }
+
+/* LOADING STYLE */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  color: #740b19;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.food-icon {
+  font-size: 60px;
+  animation: pulse 1s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.7; }
+  50% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.7; }
+}
+
+
+/* LOADING STYKE END */
